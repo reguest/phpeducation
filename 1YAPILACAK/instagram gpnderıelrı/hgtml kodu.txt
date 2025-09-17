@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instafeed on Your Website</title>
+	<style type="text/css">
+		a img{
+			width: 25%;
+		}
+	</style>
+</head>
+<body>
+  <style media="screen">
+    .boyut{
+      .width: 250px;
+    }
+  </style>
+
+    	<div class="boyut" id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'incecodeofficial',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJYWTA0QnVpTll2bmJYWnlqZAzBjSVNTMUVfbERnaHhqOFVRc0J1dEJkaXpQN0h5and4bVNUWWVwLVl5Sy1zNkY3bDBWcFV5QjBMb3diRHJIcnlPRHVyRDlDY2VNRy1UUFdqQjg3bWJJT1ZABekM0SAZDZD'
+	});
+	userFeed.run();
+	</script>
+</body>
+</html>

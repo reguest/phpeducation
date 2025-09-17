@@ -1,0 +1,2 @@
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^ https://www.incecode.com%{REQUEST_URI} [NS,R,L]

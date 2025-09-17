@@ -1,0 +1,2 @@
+   $fotoName = $_FILES['project_image']['name'];
+    if (!empty($_FILES['project_image']['name'])) { // görselle birlikte yükleme

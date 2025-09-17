@@ -1,0 +1,2 @@
+  if ($admin_email!="" and $admin_password!="")
+ {}

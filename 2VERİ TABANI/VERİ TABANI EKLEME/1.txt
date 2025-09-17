@@ -1,0 +1,9 @@
+$isim='Anar';
+$soyisim='Samadov';
+$eposta='anar@samadov.net';
+
+//prepare methodu ile insert sorgumuzu yazýyoruz fakat deðerler yerine gerçek deðerleri yazmýyoruz
+$stmt=$conn->prepare("INSERT INTO isimler (isim, soyisim, email) VALUES (:isim, :soyisim, :email)");
+
+//gerçek deðerleri güvenlik sebebi ile sonradan bind ediyoruz
+$result1=$stmt->execute(array(":isim"=>$isim, ":soyisim"=>$soyisim, ":email"=>$eposta));

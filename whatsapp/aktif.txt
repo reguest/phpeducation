@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+
+ <div class="telefon">
+
+     <a href="tel:+905343041298" title="Telefon" alt="Telefon"><i class="fa fa-phone"></i></a>
+     <span class="tooltiptext">Telefon</span>
+
+ </div>
+
+ <div class="whatsapp">
+
+     <a href="https://wa.me/+905343041298?text=" title="Whatsapp" alt="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+
+     <span class="tooltiptext">Whatsapp</span>
+
+ </div>

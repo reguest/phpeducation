@@ -1,0 +1,8 @@
+<?php
+$veri=$baglanti->db->prepare("select * from incecode where id=?");
+$veri-> execute(array("1"));
+$islem=$veri->fetch();
+?>
+
+
+<title> <?php  echo $islem["title"];  ?></title>

@@ -1,0 +1,72 @@
+<?php
+include("conn.php");
+?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="tr-TR">
+
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Emreder.com | İl İlçe Semt</title>
+    <script src="jquery-1.10.2.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    </form>
+    </td>
+    <td width="50%">
+        <form action="" name="g" method="post">
+            <table border="0">
+                <tr>
+                    <td><label>İl </label></td>
+                    <td>:</td>
+                    <td><select id="il" name="il">
+                            <option value="0">Şehir Seçiniz</option>
+                            <?php
+						$sql=$baglanti->db->prepare("SELECT id,il_adi FROM il ORDER BY id ASC");
+                        $sql->execute();
+						while($row=$sql->fetch(PDO::FETCH_ASSOC)){
+							?>
+                            <option value="<?=$row['id']?>">
+                                <?=$row['il_adi']?>
+                            </option>
+                            <?php
+						}
+					?>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>İlçe </label></td>
+                    <td>:</td>
+                    <td> <select name="ilce" id="ilce">
+                            <option value="0">İlçe Seçiniz</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Semt </label></td>
+                    <td>:</td>
+                    <td><select name="semt" id="semt">
+                            <option value="0">Semt Seçiniz</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <center><label><input type="submit" name="gonder" value="Giriş"></label></center>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+            <script src="selectchained.js" type="text/javascript"></script>
+            <script>
+                $("#ilce").remoteChained("#il", "ililce.php");
+                $("#semt").remoteChained("#ilce", "ililce.php");
+            </script>
+</body>
+
+</html>

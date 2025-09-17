@@ -1,0 +1,12 @@
+<form method="GET" action="">
+    	<input type="text" name="girdi"/>
+    	<input type="submit"/>
+    </form>
+
+    <?php
+    	if($_GET["girdi"]){  // eðer girdi adýnda bir GET varsa
+                    $degisken = $_GET["girdi"]; // GET deðerini deðiþkene aktarýyoruz
+    		echo $degisken; // deðiþkene aktardýðýmýz GET deðerini ekrana yazdýrýyoruz
+    	}
+    ?>
+

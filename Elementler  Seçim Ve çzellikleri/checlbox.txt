@@ -1,0 +1,1 @@
+istediğiniz kod şöyle basitlikte mantık olarak:<?php if($_GET["active"] == 133){ echo '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>';}else{ echo '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">';}?>

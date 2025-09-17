@@ -1,0 +1,4 @@
+$id=intval($_GET['id']);
+
+
+<td> <a href="sil.php?id=<?=$value['id'];?>&vt=<?=$value['vt'];?>">Sil</a> </td>

@@ -1,0 +1,9 @@
+<script>
+    <!--
+    var sc_project=11921154;
+    var sc_security="6c07f98b";
+                var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    //-->
+
+document.write("<sc"+"ript src='" +scJsHost +"statcounter.com/counter/counter.js'></"+"script>");       </script>

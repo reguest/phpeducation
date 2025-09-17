@@ -1,0 +1,19 @@
+Merhaba,
+
+Smtp Bilgileriniz aşağıdaki gibidir. Aşağıdaki bilgiler ile dener misiniz acaba ?
+
+Kullanıcı Adı : Mail adresiniz
+
+Parola : Mail adresinize ilişkin parola
+
+Güvenlik Tipi : Hiçbiri
+
+Gelen Mail Sunucusu : ratio.guzelhosting.com
+
+Gelen Mail Sunucusu Portu : 110 POP3/ 143 IMAP
+
+Giden Mail Sunucusu : ratio.guzelhosting.com
+
+Giden Mail Sunucusu Portu : 587
+
+Oturum Açma Gerektirir : Aktif

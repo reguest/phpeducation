@@ -1,0 +1,4 @@
+$sayi=$products->rowCount();
+                         if ($sayi!=0){}else {
+                            echo "Aradığınız kriterlerde ürün yok";
+                        }

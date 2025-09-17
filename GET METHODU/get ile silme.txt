@@ -1,0 +1,1 @@
+<td> <a href="?mode=musteri/sil&id=<?=$value['id'];?>">Sil</a> </td>

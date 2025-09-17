@@ -1,0 +1,42 @@
+<?php if (empty($_SESSION['admin_email'])) {
+  //echo "var";
+}else {
+  //echo "yok";
+//die();
+
+header('Location: login.php');;
+} ?>
+<?php
+require_once 'config.php';
+
+$id=intval($_GET['id']);
+$database = "urun";
+//  print_r($_GET);
+
+
+
+
+
+//ÜRÜN ANA RESMİNİ SİLMEK İÇİN İD DEKİ TÜM VERİLERİ GETİRDİK
+$veri=$baglanti->db->prepare("SELECT * from urun where urun_id=?");
+$veri->execute(array($id));
+$gorsel=$veri->fetch();
+$gorselkategorisi=$gorsel['urun_image'];
+//ÜRÜN ANA RESMİNİ SİLMEK İÇİN İD DEKİ TÜM VERİLERİ GETİRDİK
+
+
+$stmt2=$baglanti->db->prepare("SELECT * FROM picture where picture_kategori='$gorselkategorisi' ");
+$stmt2->execute();
+$islem=$veri->fetch();
+if($stmt2->rowCount()>0)
+{
+  while($picture=$stmt2->fetch(PDO::FETCH_ASSOC))
+  {
+extract($picture);
+$urun_resmi=$picture['picture_name'];
+unlink("../images/urunler/$urun_resmi");
+
+$sorgu=$baglanti->db->prepare("DELETE from picture where picture_kategori=?");
+$calistir2=$sorgu->execute(array($gorselkategorisi));
+}
+}

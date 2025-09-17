@@ -1,0 +1,28 @@
+ =======LOGÝN SAYFASININ EN BAÞINA KONULUR COOKIES VARSA TERRARDAN YONLENDIRILMEK ICIN
+
+//---------------COOKÝE KONTROLUNU SAÐLADIK-------------
+        if (isset($_COOKIE['giris']))//giris adýnda bir cookie varmý kontroll ettik
+        {
+          $json=json_decode($_COOKIE['giris'],true);//cookýe mýzý arraye cevýrýr normal sekýlde yazdýramayacagýmýz ýcýn
+          if ($json=true)
+          {
+            helper::yonlendir(SITE_URL);
+          //echo "zaten giriþ YAPILIIIIIIIIIIIIIIIIIIIIIIIII";
+          }
+          //helper::yonlendir(SITE_URL);
+
+        }
+
+        //---------------COOKÝE KONTROLUNU SAÐLADIK-------------
+
+====================================
+ //---------------GÝRÝÞDE COOKIE OLUÞTURDUK-------------
+$cookieArray=array("email"=>$email,"password"=>$password);
+$cookieArray=json_encode($cookieArray);
+setcookie("giris",$cookieArray,time()+36000 );
+          //---------------GÝRÝÞDE COOKIE OLUÞTURDUK-------------
+        sessionmanager::sessionolustur(["email"=>$email,"password"=>md5($password)]);
+        helper::yonlendir(SITE_URL);
+
+====YUKARDAKI KODLAR KULLANICI GÝRÝÞÝ BAÞARILI ÝSE COOKIDE UZERINDE OLUTURULUR
+

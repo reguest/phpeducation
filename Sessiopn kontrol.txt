@@ -1,0 +1,4 @@
+if (!$sessionmaneger->kontrol())
+{
+  helper::yonlendir("islemler/giris.php"); die();//Böyle bir kullanýcý yoksa session false döndüyse girias yap sayfasýna yönlendirir ve aþagýsýndaký hýc býr kodu calýstýrmaz (die)
+}

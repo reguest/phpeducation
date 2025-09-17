@@ -1,0 +1,53 @@
+    <?php
+                      //SEARCH ALANI
+                      if ($_POST) {
+                      $str=$_POST["search"];
+                    //echo $str;
+
+                    $veri=$baglanti->db->prepare("select * from product where product_name  like '%$str%' OR product_id like '%$str%'");
+                    $veri-> execute();
+                    $islem=$veri->fetchAll(PDO::FETCH_ASSOC);
+?>
+  </form>
+                    <table class="table table-hover m-b-0">
+                        <thead>
+                            <tr>
+                                <th>Görsel</th>
+                                <th>Adı</th>
+                                <th data-breakpoints="sm xs">Detayı</th>
+                                <th data-breakpoints="xs">Fiyatı</th>
+                                <th data-breakpoints="xs">İndirimli Fiyatı</th>
+                                <th data-breakpoints="xs md">Stok</th>
+                                <th data-breakpoints="xs md">Göster/Gizle</th>
+
+                                <th data-breakpoints="sm xs md">Marka</th>
+                                <th data-breakpoints="sm xs md">Kategori</th>
+                                <th data-breakpoints="sm xs md">Diğer</th>
+
+                                <th data-breakpoints="sm xs md">Eylem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                          <?php if (count($islem)!=0)
+                               {
+                               foreach($islem as $key2 =>$value2)
+                               {
+                                  ?>
+                              <tr>
+                                  <td><img src="../images/products/<?= $value2['product_image']; ?>" width="48" alt="Hayal Kozmetik"></td>
+                                  <td><h5><?= $value2['product_name']; ?></h5></td>
+                                  <td><span class="text-muted"><?= $value2['product_explanation']; ?></span></td>
+                                  <td><?= $value2['product_price']; ?></td>
+                                  <td><?= $value2['product_discount2']; ?></td>
+                                  <td><span class="col-green"><?php if ($value2['product_status']==1){echo "Var"; }else {echo "Yok";} ?></span></td>
+                                  <td><?php if ($value2['visible']==1){echo "Gösteriliyor"; }else {echo "Gizlenmiş";}  ?></td>
+                                  <td><?= $value2['product_brand']; ?></td>
+                                  <td><?= $value2['product_ram']; ?></td>
+                                  <td><?= $value2['product_storage']; ?></td>
+
+                                  <td><a href="product_edit.php?id=<?=$value2['product_id']; ?>" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                      <a href="sil.php?id=<?=$value2['product_id']; ?>" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                  </td>
+                              </tr>
+                                <?php }} //ÇOK SATANLARI ÇEKTİK ?>

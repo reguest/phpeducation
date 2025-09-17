@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Bayilikler Haritası</title> <!-- Sayfa başlığı -->
+    <meta charset="utf-8" /> <!-- Karakter seti UTF-8 olarak belirleniyor -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil cihazlar için ölçeklendirme -->
+
+    <!-- Leaflet CSS dosyasını yükle -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Harita div'i için stil ayarları */
+        #map {
+            height: 600px; /* Harita yüksekliği */
+        }
+    </style>
+</head>
+<body>
+    <h1>Türkiye'deki Bayilikler</h1> <!-- Sayfa başlığı -->
+
+    <!-- Haritanın gösterileceği div -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript dosyasını yükle -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Haritayı başlat ve Türkiye merkezli olarak ayarla
+        var map = L.map('map').setView([39.9334, 32.8597], 6); // Koordinatlar (39.9334, 32.8597) Türkiye'nin merkezi, zoom seviyesi 6
+
+        // OpenStreetMap katmanını ekle
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' // Harita katkıcılarına atıf
+        }).addTo(map); // Katmanı haritaya ekle
+
+        // Bayi bilgileri
+        var bayilikler = [
+            {
+                "name": "Bayi 1", // Bayi adı
+                "lat": 41.0082, // Enlem
+                "lon": 28.9784, // Boylam
+                "address": "İstanbul, Türkiye", // Adres
+                "phone": "+90 212 123 4567" // Telefon numarası
+            },
+            {
+                "name": "Bayi 2", // Bayi adı
+                "lat": 38.4237, // Enlem
+                "lon": 27.1428, // Boylam
+                "address": "İzmir, Türkiye", // Adres
+                "phone": "+90 232 765 4321" // Telefon numarası
+            }
+        ];
+
+        // Bayilikleri haritaya ekle
+        bayilikler.forEach(function(bayi) {
+            // Her bir bayi için marker (işaretleyici) oluştur
+            var marker = L.marker([bayi.lat, bayi.lon]).addTo(map); // Marker'ı haritaya ekle
+            // Marker'a popup (bilgi balonu) ekle
+            marker.bindPopup("<b>" + bayi.name + "</b><br>Adres: " + bayi.address + "<br>Telefon: " + bayi.phone);
+        });
+    </script>
+</body>
+</html>

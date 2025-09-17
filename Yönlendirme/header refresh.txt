@@ -1,0 +1,9 @@
+//header('Location:pages-login.php');
+  header("Refresh: 0; url=pages-login.php");1. yöntem
+
+==========================
+helper::yonlendir("?");2. yöntem
+======================3. yöntem
+
+  header('Location:'.$_SERVER['HTTP_REFERER']);
+====================

@@ -1,0 +1,15 @@
+  {
+                    $id="1";
+                    $title=helper::temizle($_POST['title']);//Site bilgilerini inputlardan alacaðýmýzý belirttik
+                    $email=helper::temizle($_POST['email']);//Site bilgilerini inputlardan alacaðýmýzý belirttik
+                    $sorgu=$baglanti->db->prepare("UPDATE site_ayar set title= :title, email= :email, where id= :id");//Güncelleme komutlarýmýzý yazdýk
+                    $guncelle= $sorgu->execute(array(":title" => $title , ":email" => $email, ":id" => $id));//Güncelleme komutlarýmýzý yazdýk
+                    if ($guncelle)
+                     {
+                       echo "Güncelleme baþarýlý";
+                      //helper::alert("success","Tebrikler ! Kullanýcý güncellendi");
+                     }
+                     else {
+                       echo "Günceleme HATASI";
+                     }
+                 }

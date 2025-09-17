@@ -1,0 +1,25 @@
+RewriteEngine On
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^(.*)$ $1.php
+
+
+
+RewriteRule ^about/? about-us.php [NC,L]
+
+RewriteRule ^contact/? contact.php [NC,L]
+
+RewriteRule ^home/? index.php [NC,L]
+
+RewriteRule ^blog/? blog.php [NC,L]
+
+RewriteRule ^login/? login.php [NC,L]
+
+
+
+RewriteRule ^shop-([0-9a-zA-Z-_]+)-([0-9]+)$ shop.php?id=$2 [L,QSA]

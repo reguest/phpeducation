@@ -1,0 +1,40 @@
+    <?php
+                                                                            if (isset($_POST)) {
+                                                                                // gonder var ise
+
+                                                                                $mail_baslik= strip_tags($_POST['mail_baslik']);
+                                                                                $mail_konu = strip_tags($_POST['mail_konu']);
+                                                                                $mail_mesajı= strip_tags($_POST['mail_mesajı']);
+                                                                                include 'mail/class.phpmailer.php';
+                                                                                if ($mail_baslik!="" and $mail_konu!="" and $mail_mesajı!="") {
+                                                                                  //inputlar boş değifelse
+
+                                                                                  //----------- MAİL BAŞLANGICI-----------
+                                                                                  $mail= new PHPMailer();
+                                                                                  $mail->Host = 'smtp.yandex.com';
+                                                                                  $mail->Port=587;
+                                                                                  $mail->SMTPSecure= 'tls';
+                                                                                  $mail->SMTPAuth = true;
+                                                                                  $mail->Username='ulgertur@yandex.com';
+                                                                                  $mail->Password='ulgertur68123';
+                                                                                  $mail->IsSMTP();
+
+                                                                                  $mail->From ="ulgertur@yandex.com";
+                                                                                  $mail->FromName='lkrwgm';
+                                                                                  $mail->CharSet="UTF-8";
+                                                                                  $mail->Subject=$konu;
+                                                                                  //----------- MAİL BAŞLANGICI-----------
+
+                                                                                 $mail->AddBCC('info@ulger.de');
+
+                                                                                  $mail->MsgHtml($mail_mesajı);
+                                                                                  if ($mail->Send()){
+                                                                                    echo "Mail Gönderildi";
+                                                                                    //unlink($klasor.'/'.$adi);
+                                                                                  }else{
+                                                                                    echo "hata oluştu";
+                                                                                  }
+
+                                                                                }
+                                                                              }
+                                                                               ?>

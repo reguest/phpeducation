@@ -1,0 +1,16 @@
+
+                        $price =  $productAll['price'];
+                        extract($_POST);
+
+                        if (!empty($_GET["check1"])) { // checkbox seçili ise
+
+                            $toplam =  $price += 1;
+                        }
+                        if (!empty($_GET["check2"])) { // checkbox seçili ise
+
+                            $toplam =  $price += 1;
+                        }
+                        if (!empty($_GET["check3"])) { // checkbox seçili ise
+
+                            $toplam =  $price += 1;
+                        }

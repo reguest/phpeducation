@@ -1,0 +1,18 @@
+    <input  width="50px" type="text" name="search" class="form-control pull-right" placeholder="Arayýn">
+  <button type="submit" name="submit">Arayýn</button>
+  <?php
+  //SEARCH ALANI
+  if ($_POST) {
+  $str=$_POST["search"];
+//echo $str;
+$veri=$baglanti->db->prepare("select * from urunler where kategori='$str'");
+$veri-> execute();
+$islem=$veri->fetch();
+
+
+
+
+
+
+
+<td> <a href=""></a> <?=$islem['adi'];?></td>

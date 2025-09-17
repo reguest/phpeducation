@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^ https://grupauto.com.tr/%{REQUEST_URI} [NS,R,L]
+

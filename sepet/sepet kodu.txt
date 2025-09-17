@@ -1,0 +1,20 @@
+if (isset($_COOKIE['sepet']) && count($_COOKIE['sepet'])>0) {
+  $productIDs = implode(",", array_keys($_COOKIE['sepet']));
+
+  $veri=$baglanti->db->prepare('SELECT * FROM product WHERE product_id IN ('.$productIDs.')');
+  $veri->execute();
+  //print_r($kurslar=$veri->fetchAll(PDO::FETCH_ASSOC));
+  $kurslar=$veri->fetchAll(PDO::FETCH_ASSOC);
+
+foreach ($kurslar as $k => $kurs)
+{
+  echo '<tr>
+    <th scope="row">'.($k+1).'</th>
+    <td><img width="50px" src="images/products/'.$kurs['product_image'].'" alt=""> </td>
+    <td>'.$kurs['product_name'].'</td>
+    <td>'.$kurs['product_price'].'</td>
+    <td> <input type="number" name="urun['.$kurs['product_id'].'][]" min="1" value="'.$_COOKIE['sepet'][$kurs['product_id']].'"> </td>
+    <td>'.($_COOKIE['sepet'][$kurs['product_id']]*$kurs['product_price']).'</td>
+    <td><a href="islem.php?sepetSil=1&id='.$kurs['product_id'].'"><button type="button" >Sil </button> </a></td>
+  </tr>';
+}

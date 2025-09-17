@@ -1,0 +1,9 @@
+$isim='Banu';
+$soyisim='Samadova';
+$eposta='banu@samadov.net';
+
+//prepare methodu ile insert sorgumuzu yazmanýn bir diðer yöntemi
+$stmt=$conn->prepare("INSERT INTO isimler (isim, soyisim, email) VALUES (?,?,?)");
+
+//deðerleri bind etmenin bir diðer yöntemi
+$result2=$stmt->execute(array($isim, $soyisim, $eposta));

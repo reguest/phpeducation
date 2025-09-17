@@ -1,0 +1,6 @@
+$sorgu = $baglanti->db->prepare('SELECT * FROM hizmetler ');
+$sorgu->execute();
+$list=$sorgu->fetchAll(PDO::FETCH_OBJ);
+//print_r($list);
+//echo $list;
+print_r(json_encode($list));

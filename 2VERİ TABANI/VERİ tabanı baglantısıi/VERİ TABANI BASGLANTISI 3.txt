@@ -1,0 +1,17 @@
+session_start();
+require_once 'helper.php';
+class baglanti
+{
+public $db;
+function __construct()
+{
+  $hostname="localhost";
+  $name="incecode";
+  $dbuser="root";
+  $dbpassword="";
+  $this->db=new PDO("mysql:host=$hostname;dbname=$name;charset=utf8",$dbuser,$dbpassword);
+
+}
+}
+
+$baglanti=new baglanti();

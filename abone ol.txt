@@ -1,0 +1,28 @@
+if (isset($_POST['aboneol'])) {
+  // abone ol tıklanıldı
+
+  //prepare methodu ile insert sorgumuzu yazmanın bir diğer yöntemi
+  $abonemail=strip_tags($_POST['abonemail']);
+  if (!$abonemail=="") {
+    // mail inputu boş değil ise
+
+    $sorgu=$baglanti->db->prepare("select * from mail where mail_host= :mail_host");
+    $sorgu->bindParam(":mail_host" , $abonemail , PDO::PARAM_STR);
+    $sorgu->execute();
+    $sayi=$sorgu->rowCount();
+    if ($sayi==0) // bu email kontrol ediliyor yoksa yani sıfırsa işlem ypaılıyor
+    {
+
+  //yeni abone eklemiş oluyoruz
+  $mailekle=$baglanti->db->prepare("INSERT INTO mail (mail_host) VALUES (?)");
+  $ekle=$mailekle->execute(array($abonemail));
+  echo  "Mailiniz eklendi!";
+ //yeni abone eklemiş oluyoruz
+
+  }else {
+    echo "Böyle bir mail zaten var";
+  }
+}else {
+ echo "Mail Alanı Eksik";
+}
+ }

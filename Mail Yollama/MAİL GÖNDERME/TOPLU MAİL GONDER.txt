@@ -1,0 +1,108 @@
+<form enctype="multipart/form-data" method="POST">
+                                  <?php
+if ($_POST) {
+  //echo "poset edildi";
+  $baslik = trim($_POST['baslik']);
+  $konu = trim($_POST['konu']);
+  $icerik = trim($_POST['icerik']);
+  require_once 'mail/class.phpmailer.php';
+if (!$baslik || !$konu || !$icerik || !$_FILES['resim']['name']) {
+  echo "Boş alan bırakmayınız";
+}else {
+  //Tüm alanlar doluysa
+
+//----------- RESİM YÜKLEMEK İÇİN-----------
+$klasor="mail";
+$sayi=time().rand();
+$uzanti=explode(".",$_FILES['resim']['name']);
+$uzanti=end($uzanti);
+$adi=$sayi. '.'.$uzanti;
+move_uploaded_file($_FILES['resim']['tmp_name'],$klasor.'/'.$adi);
+
+
+//----------- RESİM YÜKLEMEK İÇİN-----------
+
+  //----------- MAİL BAŞLANGICI-----------
+  $mail= new PHPMailer();
+  $mail->Host = 'mail.hayalkozmetik.com.tr';
+  $mail->Port=587;
+  $mail->SMTPSecure= 'tls';
+  $mail->SMTPAuth = true;
+  $mail->Username='info@hayalkozmetik.com.tr';
+  $mail->Password='86a9BcP6nn';
+  $mail->IsSMTP();
+
+  $mail->From ="info@hayalkozmetik.com.tr";
+  $mail->FromName=$baslik;
+  $mail->CharSet="UTF-8";
+  $mail->Subject=$konu;
+  $mail->AddAttachment($klasor.'/'.$adi , $_FILES['resim']['name']);
+  $mail_icerik=$icerik;
+  //----------- MAİL BAŞLANGICI-----------
+  $aboneler= $baglanti->db->prepare("SELECT * FROM mail");
+  $aboneler->execute();
+  if ($aboneler->rowCount()) {
+    foreach($aboneler as $row){
+      $mail->AddBCC($row['mail']);
+    }
+  }
+  $mail->MsgHtml($mail_icerik);
+  if ($mail->Send()){
+    echo "Mail Gönderildi";
+    //unlink($klasor.'/'.$adi);
+  }else{
+    echo "hata oluştu";
+  }
+
+}
+
+}
+
+                                   ?>
+
+                                  <div class="col-sm-12">
+                                    Toplam Abone: <?=$sessionmanager->sayial("mail");?>
+                                      <select class="form-control show-tick">
+                                          <option value="">-- Tüm Aboneler --</option>
+
+                                          <?php
+                                              $stmt=$baglanti->db->prepare('SELECT * FROM mail');
+                                                $stmt->execute();
+                                                if($stmt->rowCount()>0)
+                                                {
+                                                  while($referans=$stmt->fetch(PDO::FETCH_ASSOC))
+                                                  {
+                                                    extract($referans);
+                                                    ?>
+                                                  <option value="<?= $referans['mail']; ?>"><?= $referans['mail']; ?></option>
+                                              <?php
+
+                                                }
+                                              }else {
+                                                echo "Ürün bulunamadı";
+                                              } ?>
+
+
+
+                                      </select>
+                                  </div>
+                                  <div class="col-sm-12">
+
+                                      <div class="form-group">
+                                          <input type="text" name="baslik" class="form-control" placeholder="Mail Başlığı" value="HAYAL KOZMETİK" />
+
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" name="konu" class="form-control" placeholder="Mail Konusu" value="İndirim Var"/>
+
+                                      </div>
+                                      <div class="form-group">
+                                        <textarea name="icerik" rows="8" cols="100%" >Merhaba değerli abonemiz Hayal Kozmetik olarak sizlere web sitemize abone olduğunuz için ayrıca teşekkür eder bu indirimli ürünümüzü sizlere sunmaktan gurur duyarız. MUTLU ALIŞVERİŞLER :-)</textarea>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="file" name="resim" value="">
+                                      </div>
+                                      <button type="submit" class="btn l-cyan btn-round btn-lg btn-block waves-effect waves-light">Mail Gönder</button>
+                                  </div>
+
+                            </form>

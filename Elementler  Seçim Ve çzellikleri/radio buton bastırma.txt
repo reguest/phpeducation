@@ -1,0 +1,1 @@
+<input type="radio" name="radio" value="Kadýn" id="kadin" <?php echo $gelen == "Kadýn" ? "checked" : ""; ?>> <label for="kadin">Kadýn</label>

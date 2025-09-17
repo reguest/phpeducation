@@ -1,0 +1,33 @@
+# Options - Indexes
+ErrorDocument 404 /404.php
+RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php
+
+# RewriteRule ^about/? aboutus.php [NC,L]
+RewriteRule ^basket/? basket.php [NC,L]
+RewriteRule ^user/? user.php [NC,L]
+RewriteRule ^complete/? complete.php [NC,L]
+RewriteRule ^logout/? panel/logout.php [NC,L]
+RewriteRule ^contact/? contact.php [NC,L]
+RewriteRule ^home/? index.php [NC,L]
+RewriteRule ^blogs/? blogs.php [NC,L]
+RewriteRule ^login/? panel/login.php [NC,L] 
+RewriteRule ^sss/? faq.php [NC,L]
+RewriteRule ^orders/? orders.php [NC,L]
+RewriteRule ^return-policy/? return-policy.php [NC,L]
+RewriteRule ^privary-policy/? privary-policy.php [NC,L]
+RewriteRule ^terms-and-conditions/? terms-and-conditions.php [NC,L]
+RewriteRule ^cookie-policy/? cookie-policy.php [NC,L]
+
+
+
+RewriteRule ^shop-([0-9a-zA-Z-_]+)-([0-9]+)$ shop.php?id=$2 [L,QSA]
+RewriteRule ^product-([0-9a-zA-Z-_]+)-([0-9]+)$ product-detail.php?id=$2 [L,QSA]
+RewriteRule ^blog-([0-9a-zA-Z-_]+)-([0-9]+)$ blog-detail.php?id=$2 [L,QSA]
+# RewriteRule ^ http://localhost/ulusarp/%{REQUEST_URI} [NS,R,L]
+
+
+
+

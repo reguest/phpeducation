@@ -1,0 +1,2 @@
+$sil=$bilgi['is_image'];
+                       unlink("../resimler/urunler/$sil");

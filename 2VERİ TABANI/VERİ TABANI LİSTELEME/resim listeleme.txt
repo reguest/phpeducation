@@ -1,0 +1,21 @@
+<?php
+$resimler = $baglanti->db->prepare("SELECT * FROM footer_image");
+$resimler->execute();
+
+if($resimler->rowCount()){
+
+    foreach($resimler as $piture){
+
+        ?>
+
+         <img src="upload/<?php echo $piture["picProfile"];?>" alt="Resim" />
+
+        <?php
+    }
+
+}else{
+
+echo "Resim bulunamadý";
+}
+
+?>

@@ -1,0 +1,9 @@
+$sorgu=$baglanti->db->prepare("select * from user where email= :email and sifre= :sifre");
+  $sorgu->bindParam(":email" , $email , PDO::PARAM_STR);
+  $sorgu->bindParam(":sifre" , $sifre , PDO::PARAM_STR);
+  $sorgu->execute();
+  $sayi=$sorgu->rowCount();
+  if ($sayi==0)
+  {
+    echo "Bu bilgilere göre kullanýcý yok";
+  }

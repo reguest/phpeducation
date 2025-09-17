@@ -1,0 +1,109 @@
+                 <?php
+if (isset($_POST['kaydet'])) {
+
+//DEĞİŞKENLER
+
+//echo $turugizlegoster;
+$blog_adi=strip_tags($_POST['blog_adi']);
+$blog_aciklama=strip_tags($_POST['blog_aciklama']);
+$blog_paylasan=strip_tags($_POST['blog_paylasan']);
+$en_adi=strip_tags($_POST['en_adi']);
+$en_aciklama=strip_tags($_POST['en_aciklama']);
+$ar_adi=strip_tags($_POST['ar_adi']);
+$ar_aciklama=strip_tags($_POST['ar_aciklama']);
+if ($_FILES['yukle']['tmp_name']=="") {
+
+  //echo "dosya yok";
+  $sorgu=$baglanti->db->prepare("UPDATE bloglar set
+    blog_adi=:blog_adi,
+    blog_aciklama=:blog_aciklama,
+    blog_paylasan=:blog_paylasan,
+    en_adi=:en_adi,
+    en_aciklama=:en_aciklama,
+    ar_adi=:ar_adi,
+    ar_aciklama=:ar_aciklama
+    where blog_id=:blog_id");//Güncelleme komutlarımızı yazdık
+  $guncelle= $sorgu->execute(array(
+    ":blog_adi" =>$blog_adi,
+    ":blog_aciklama" =>$blog_aciklama,
+    ":blog_paylasan" =>$blog_paylasan,
+    ":en_adi" =>$en_adi,
+    ":en_aciklama" =>$en_aciklama,
+    ":ar_adi" =>$ar_adi,
+    ":ar_aciklama"=>$ar_aciklama,
+    ":blog_id"=>$id));//Güncelleme komutlarımızı yazdık
+  if ($guncelle) {
+    //echo "Tur Güncellendi";
+    ?>
+    <div class="alert alert-success" role="alert">
+                                Blog  Güncellendi!
+                                </div><?php
+  }else {
+  //  echo "Bir hata oluştu!";
+  ?>
+  <div class="alert alert-danger" role="alert">
+                                  Hata Oluştu!
+                                </div>
+  <?php
+  }
+
+}else {
+  // FOTOĞRAFDA VAR
+  //echo "dosya var";
+//GÖRSEL YÜKLEME
+$sonsayi2=$baglanti->db->prepare("SELECT * from indextable where id=?");
+$sonsayi2->execute(array("0"));
+$islem2=$sonsayi2->fetch();
+$sonsayi2=$islem2['imageIndex'];
+//SON RAKAMI BULUP URUN RESİM ADI YAPTIK
+$nextindex=$sonsayi2+1;
+$dizin ="../images/blog/";
+$rnd=rand(1,10000);
+$rnd2=rand(100000,900000);
+$tpl=$rnd+$rnd2;
+$yuklenecekresim = $dizin.$tpl.$nextindex.".png";
+
+move_uploaded_file($_FILES["yukle"]["tmp_name"],$yuklenecekresim);
+$gorsel= $tpl.$nextindex.".png";
+
+  $sorgu=$baglanti->db->prepare("UPDATE bloglar set
+    blog_adi=:blog_adi,
+    blog_aciklama=:blog_aciklama,
+    blog_paylasan=:blog_paylasan,
+    en_adi=:en_adi,
+    en_aciklama=:en_aciklama,
+    ar_adi=:ar_adi,
+    ar_aciklama=:ar_aciklama,
+    blog_image=:blog_image
+    where blog_id=:blog_id");//Güncelleme komutlarımızı yazdık
+  $guncelle= $sorgu->execute(array(
+    ":blog_adi" =>$blog_adi,
+    ":blog_aciklama" =>$blog_aciklama,
+    ":blog_paylasan" =>$blog_paylasan,
+    ":en_adi" =>$en_adi,
+    ":en_aciklama" =>$en_aciklama,
+    ":ar_adi" =>$ar_adi,
+    ":ar_aciklama"=>$ar_aciklama,
+    ":blog_image"=>$gorsel,
+    ":blog_id"=>$id));//Güncelleme komutlarımızı yazdık
+  if ($guncelle) {
+    //echo "Tur Güncellendi";
+    ?>
+    <div class="alert alert-success" role="alert">
+                                Blog  Güncellendi!
+                                </div><?php
+  }else {
+  //  echo "Bir hata oluştu!";
+  ?>
+  <div class="alert alert-danger" role="alert">
+                                  Hata Oluştu!
+                                </div>
+  <?php
+  }
+
+
+
+
+}
+
+}

@@ -1,0 +1,33 @@
+
+<a href="turlar/mersin.php?id='1'"> </a>
+
+======= VERÝLERÝN GETÝRÝLECEÐÝ SAYFA============
+<?php include "../rezervasyon/config.php"; ?>
+<?php print_r( $_GET);
+$id=intval($_GET['id']);
+
+$cekkultur=$baglanti->db->prepare("select * from kultur where id='$id' ");
+$cekkultur->execute();
+$kulturcek=$cekkultur->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<?php if (count($kulturcek)!=0)
+{
+foreach($kulturcek as $keykultur=>$kultur)
+{
+ ?>
+ <?=$kultur['tur_adi'];  ?>
+ <?=$kultur['tur_fiyati'];?>
+
+
+
+
+ <?php
+}
+}
+else {
+//  echo "Henüz ürün Girilmemiþ";
+}
+?>
+
+======= VERÝLERÝN GETÝRÝLECEÐÝ SAYFA============

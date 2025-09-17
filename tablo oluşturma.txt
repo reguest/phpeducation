@@ -1,0 +1,5 @@
+CREATE TABLE `kadro` (
+  `kadro_id` int(11) NOT NULL,
+  `kadro_image` varchar(255) NOT NULL,
+  `kadro_adi` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

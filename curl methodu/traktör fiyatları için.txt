@@ -1,0 +1,13 @@
+<?php
+
+$site = file_get_contents ("https://www.deutz-fahr.com/tr-tr/urunler/tarla/8047-8280-ttv");
+
+preg_match_all('@<td>(.*?)</td>@si', $site,$baslik);
+
+$cikti = implode("",$baslik[1]);
+echo $cikti;
+
+
+
+
+?>

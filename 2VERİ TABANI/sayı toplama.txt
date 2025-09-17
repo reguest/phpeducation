@@ -1,0 +1,12 @@
+public function sayial($table)
+{
+$sorgu=$this->db->prepare("select * from ".$table);
+$sorgu->execute();
+return $sorgu->rowCount();
+
+}
+
+
+
+// bu kod ile istedigimizz veri tabanýnýn sayýsýný alýrýz
+<?=$general->sayial("customers");?>

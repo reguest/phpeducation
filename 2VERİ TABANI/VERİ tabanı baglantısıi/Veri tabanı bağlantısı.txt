@@ -1,0 +1,24 @@
+<?php require_once "config/config.php";?>
+
+<?php
+$veri=$db->prepare("select * from incecode where id=?");
+$veri-> execute(array("1"));
+$islem=$veri->fetch();
+?>
+incex.php
+-------------------
+
+<?php
+try
+{
+
+  $db=new PDO("mysql:host=localhost;dbname=incecode;charset=utf8","root","");
+}
+catch(PDOException $hata){
+  echo $hata -> getMessage();
+}
+//------------------VERÝ TABANI BAÐLANTIIS--------------
+
+?>
+config.php
+-------------------------

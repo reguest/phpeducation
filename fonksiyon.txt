@@ -1,0 +1,27 @@
+<?php
+
+class general extends baglanti
+{
+public function sayial($table)
+{
+$sorgu=$this->db->prepare("select * from ".$table);
+$sorgu->execute();
+return $sorgu->rowCount();
+
+}
+public function fiyat($id)
+{
+  $sorgu=$this->db->prepare("select SUM(price) from transaction where customersId=?");
+  $sorgu->execute(array($id));
+  $sonuc=$sorgu->fetch(PDO::FETCH_ASSOC);
+  return $sonuc['SUM(price)'];
+
+}
+public function log($text)
+{
+  $sorgu=$this->db->prepare("insert into log(date,text)values(?,?)");
+  $sorgu->execute(array(date("Y-m-d"),$text));
+
+}
+
+}

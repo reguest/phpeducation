@@ -1,0 +1,3 @@
+Select * from kulanicilar where yas=18 and ad='ahmet'
+
+yukardaki kod veri kullanicilar tablosundan sadece yaþý 18 ve adý ahmet olanlarý çeker

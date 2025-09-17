@@ -1,0 +1,19 @@
+sessionmanager::oturumkontrol(); //KONTROL YAPMAK ÝSTEDÝÐÝMÝZ SAYFAYA YAZILIR
+
+================== SESSÝON MANEGERA YAZILIR
+//Session KONTROLU YAPAR SAYFAYI ONA GORE YUKLER
+ static function oturumkontrol() {
+
+  if (empty($_SESSION['email'])) {
+    header("location:pages-login.php");
+    //Session kontrolu yapýldý ve boþ döndüðü için login sayfasýna yönlendirildi
+
+  }
+  else {
+  //  echo "OTURUM BASARILI ISE";
+
+  }
+}
+//Session KONTROLU YAPAR SAYFAYI ONA GORE YUKLER
+
+===========================SESSÝON MANEGERA YAZILIR

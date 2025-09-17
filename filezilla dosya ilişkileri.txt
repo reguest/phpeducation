@@ -1,0 +1,19 @@
+. "c:\Users\orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" %f
+php "c:\Users\orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" -open
+txt "C:\Users\orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" %f
+
+
+----------
+. C:\WINDOWS\system32\NOTEPAD.EXE %f
+/ C:\WINDOWS\system32\NOTEPAD.EXE %f
+css "C:\Users\orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" %f
+example C:\WINDOWS\system32\OpenWith.exe %f
+htaccess C:\Users\Orhan\AppData\Local\atom\app-1.57.0\atom.exe %f
+html C:\WINDOWS\system32\NOTEPAD.EXE %f
+ini "C:\Users\Orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+js C:\WINDOWS\system32\NOTEPAD.EXE %f
+json E:\Programlar\Notepad++\notepad++.exe %f
+md C:\WINDOWS\system32\NOTEPAD.EXE %f
+php "C:\Users\orhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" %f
+php2 C:\WINDOWS\system32\NOTEPAD.EXE %f
+txt C:\WINDOWS\system32\NOTEPAD.EXE %f

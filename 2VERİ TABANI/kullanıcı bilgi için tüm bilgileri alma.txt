@@ -1,0 +1,13 @@
+  public function kullanicibilgi($id)
+    {
+  $sorgu=$this->db->prepare("select * from customers where id=?");
+  $sorgu->execute(array($id));
+  return $sorgu->fetch(PDO::FETCH_ASSOC);
+    }
+
+
+
+
+// bu kod ile þçalýþýr
+
+$bilgi=$kullanicimodel->kullanicibilgi($id);

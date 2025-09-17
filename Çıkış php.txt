@@ -1,0 +1,31 @@
+/*------------- ÝKÝNCÝ YÖNTEM -------------------*/
+require_once 'config/config.php';
+sessionmanager::sessionsil();
+helper::yonlendir(SITE_URL);
+/*------------- ÝKÝNCÝ YÖNTEM -------------------*/
+
+
+static function sessionsil()//SESSÝON MANEGER KISMINA----
+{
+  session_destroy();
+}
+//SESSÝON MANEGER KISMINA-----------------
+YUKARDAKÝNÝ UYGULA	
+
+
+===============================================
+
+
+/*------------- BÝRÝNCÝ YÖNTEM -------------------*/
+/*
+session_start();
+if (isset($_SESSION['email']))
+{
+//echo $_SESSION['email'];
+session_destroy();
+}
+else {
+  //header('Location:pages-login.php');
+  header("Refresh: 1; url=pages-login.php");
+}
+*/

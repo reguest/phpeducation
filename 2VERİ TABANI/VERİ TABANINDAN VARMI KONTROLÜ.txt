@@ -1,0 +1,7 @@
+  $sorgu=$baglanti->db->prepare("select * from mail where mail= :mail");
+                            $sorgu->bindParam(":mail" , $mail_al , PDO::PARAM_STR);
+                            $sorgu->execute();
+                            $sayi=$sorgu->rowCount();
+                            if ($sayi==0) // bu email kontrol ediliyor yoksa yani sıfırsa işlem ypaılıyor
+                            { //BÖYLE BİR VERİ YOK 
+}

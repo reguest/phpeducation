@@ -1,0 +1,200 @@
+[20-Jan-2024 21:30:31 Europe/Istanbul] PHP Notice:  Undefined index: image in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 28
+[20-Jan-2024 21:30:31 Europe/Istanbul] PHP Warning:  unlink(../../images/banner/): Is a directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 29
+[20-Jan-2024 21:31:30 Europe/Istanbul] PHP Warning:  unlink(../../images/banner/sd): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 32
+[20-Jan-2024 21:32:01 Europe/Istanbul] PHP Warning:  unlink(../images/banner/sd): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 32
+[20-Jan-2024 21:32:49 Europe/Istanbul] PHP Warning:  unlink(../images/banner/sd): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 32
+[20-Jan-2024 21:42:44 Europe/Istanbul] PHP Warning:  unlink(../images/banner/otest): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 128
+[20-Jan-2024 21:44:40 Europe/Istanbul] PHP Warning:  unlink(../images/banner/otest): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 173
+[20-Jan-2024 21:46:07 Europe/Istanbul] PHP Warning:  unlink(../images/banner/404412565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 173
+[20-Jan-2024 22:09:51 Europe/Istanbul] PHP Warning:  unlink(../images/banner/853299565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 82
+[20-Jan-2024 22:09:51 Europe/Istanbul] PHP Warning:  unlink(../images/banner/859648565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 128
+[20-Jan-2024 22:09:51 Europe/Istanbul] PHP Warning:  unlink(../images/banner/684688565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 173
+[20-Jan-2024 22:10:09 Europe/Istanbul] PHP Warning:  unlink(../images/banner/739872565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 82
+[20-Jan-2024 22:10:09 Europe/Istanbul] PHP Warning:  unlink(../images/banner/596491565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 128
+[20-Jan-2024 22:10:09 Europe/Istanbul] PHP Warning:  unlink(../images/banner/465023565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 173
+[20-Jan-2024 22:32:46 Europe/Istanbul] PHP Warning:  unlink(../images/banner/898808565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 218
+[20-Jan-2024 22:35:20 Europe/Istanbul] PHP Warning:  unlink(../images/banner/898808565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 218
+[20-Jan-2024 23:27:49 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[20-Jan-2024 23:31:41 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[21-Jan-2024 21:38:06 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[21-Jan-2024 21:38:10 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[21-Jan-2024 21:38:11 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[21-Jan-2024 21:38:12 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[21-Jan-2024 21:38:15 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[25-Jan-2024 23:01:13 Europe/Istanbul] PHP Notice:  Undefined variable: query in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 79
+[25-Jan-2024 23:01:13 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php:79
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 79
+[25-Jan-2024 23:07:42 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[25-Jan-2024 23:07:44 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[28-Jan-2024 17:33:47 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[28-Jan-2024 17:53:20 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 116
+[28-Jan-2024 18:33:21 Europe/Istanbul] PHP Parse error:  syntax error, unexpected end of file in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 132
+[28-Jan-2024 18:35:35 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 53
+[28-Jan-2024 18:36:13 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 65
+[28-Jan-2024 18:39:30 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 113
+[29-Jan-2024 19:31:58 Europe/Istanbul] PHP Warning:  unlink(../images/banner/513299565.png): No such file or directory in /home/incecode/eticaret.incecode.com/panel/settings/banner-settings.php on line 218
+[30-Jan-2024 15:10:06 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[01-Feb-2024 20:25:14 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[01-Feb-2024 20:25:23 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/eticaret.incecode.com/panel/settings/basket-settings.php on line 46
+[01-Feb-2024 21:31:37 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 43
+[01-Feb-2024 21:31:50 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 43
+[01-Feb-2024 21:32:51 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 64
+[01-Feb-2024 21:33:21 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 113
+[01-Feb-2024 21:44:21 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/eticaret.incecode.com/panel/settings/order-settings.php on line 113
+[04-Feb-2024 10:18:25 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 105
+[04-Feb-2024 10:18:25 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 133
+[04-Feb-2024 10:35:49 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 96
+[04-Feb-2024 10:37:33 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 46
+[04-Feb-2024 10:39:49 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 46
+[04-Feb-2024 10:40:04 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:06 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:08 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:10 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:11 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:12 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:12 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:40:14 Europe/Istanbul] PHP Notice:  Undefined variable: category in /home/incecode/safetyatom.com/panel/settings/product-settings.php on line 61
+[04-Feb-2024 10:44:25 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:45:22 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:47:22 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:50:05 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:52:20 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:52:52 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:53:03 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 10:53:07 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 114
+[04-Feb-2024 12:22:22 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 105
+[04-Feb-2024 12:22:22 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 133
+[04-Feb-2024 12:23:31 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 105
+[04-Feb-2024 12:23:31 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 133
+[04-Feb-2024 12:42:46 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 105
+[04-Feb-2024 12:42:46 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 133
+[04-Feb-2024 12:47:02 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 94
+[04-Feb-2024 12:52:15 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 94
+[04-Feb-2024 12:52:16 Europe/Istanbul] PHP Notice:  Undefined variable: piece in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 94
+[04-Feb-2024 13:00:23 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:00:23 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 145
+[04-Feb-2024 13:00:53 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:00:54 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 145
+[04-Feb-2024 13:01:41 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:01:46 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:08 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:09 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:09 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:10 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:11 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:11 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:11 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:12 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:12 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:02:47 Europe/Istanbul] PHP Notice:  Trying to access array offset on value of type bool in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 35
+[04-Feb-2024 13:03:46 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/order-settings.php on line 146
+[04-Feb-2024 13:19:37 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 78
+[04-Feb-2024 13:22:15 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 78
+[04-Feb-2024 13:22:51 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 96
+[04-Feb-2024 13:23:44 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 96
+[04-Feb-2024 13:24:06 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 78
+[04-Feb-2024 13:24:19 Europe/Istanbul] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 78
+[04-Feb-2024 13:24:24 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 96
+[04-Feb-2024 13:34:02 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:34:37 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:34:57 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:36:32 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:36:54 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:37:22 Europe/Istanbul] PHP Notice:  Undefined index: id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 58
+[04-Feb-2024 13:42:19 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 120
+[04-Feb-2024 13:42:54 Europe/Istanbul] PHP Notice:  Undefined variable: email in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 120
+[04-Feb-2024 22:16:57 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Feb-2024 22:34:31 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 00:57:26 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 04:06:06 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 05:32:47 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 08:55:06 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 13:51:18 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 14:34:59 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[06-Feb-2024 15:06:21 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Feb-2024 19:51:58 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Feb-2024 06:28:14 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[13-Feb-2024 23:20:54 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[13-Feb-2024 23:20:54 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[13-Feb-2024 23:20:58 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[13-Feb-2024 23:21:04 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[13-Feb-2024 23:21:05 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[14-Feb-2024 22:00:47 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[14-Feb-2024 22:00:48 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[14-Feb-2024 22:00:48 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[14-Feb-2024 22:00:49 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[14-Feb-2024 22:00:50 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[15-Feb-2024 07:08:21 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[16-Feb-2024 23:51:18 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[16-Feb-2024 23:51:19 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[16-Feb-2024 23:51:19 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[16-Feb-2024 23:51:26 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[16-Feb-2024 23:51:28 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[17-Feb-2024 22:22:07 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[17-Feb-2024 22:22:07 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[17-Feb-2024 22:22:08 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[17-Feb-2024 22:22:09 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[17-Feb-2024 22:22:09 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:30:21 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:30:22 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:30:24 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:31:14 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:36:45 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:40:48 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 13:40:56 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 14:05:59 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 14:59:53 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 15:16:06 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 15:17:20 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 15:25:44 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 16:22:18 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 16:41:00 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[20-Feb-2024 17:19:54 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 04:25:50 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 04:25:54 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 04:27:09 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 04:27:15 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 04:27:20 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 10:37:30 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 10:37:30 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 10:37:31 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 10:37:32 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[22-Feb-2024 10:37:32 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[24-Feb-2024 08:53:51 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[24-Feb-2024 08:53:52 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[24-Feb-2024 08:53:59 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[24-Feb-2024 08:54:00 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[24-Feb-2024 08:54:03 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[28-Feb-2024 20:08:01 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[01-Mar-2024 15:07:29 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[01-Mar-2024 15:07:37 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[01-Mar-2024 15:07:40 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[01-Mar-2024 15:07:43 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[01-Mar-2024 15:07:44 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 00:24:14 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 01:32:57 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 03:49:32 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 03:49:33 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 03:49:33 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 03:49:35 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[04-Mar-2024 03:49:35 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Mar-2024 08:04:32 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Mar-2024 08:04:33 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Mar-2024 08:04:33 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Mar-2024 08:04:35 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[08-Mar-2024 08:04:35 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[10-Mar-2024 19:13:57 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[11-Mar-2024 05:51:11 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 02:40:13 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 08:01:21 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 08:54:55 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 10:47:35 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 10:47:49 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 10:48:02 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 10:48:17 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81
+[12-Mar-2024 10:48:33 Europe/Istanbul] PHP Notice:  Undefined variable: product_id in /home/incecode/safetyatom.com/panel/settings/basket-settings.php on line 81

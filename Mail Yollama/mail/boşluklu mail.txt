@@ -1,0 +1,45 @@
+  <?php
+                            if (isset($_POST['gonder'])) {
+
+                                $ad = strip_tags($_POST['ad']);
+                                $konu = strip_tags($_POST['konu']);
+                                $telefon = strip_tags($_POST['telefon']);
+                                $mesaj = strip_tags($_POST['mesaj']);
+                                // gonder var ise
+                                include 'mail/class.phpmailer.php';
+                                if ($ad != ""  and $konu != "" and $mesaj != "") {
+                                    //inputlar boş değifelse
+
+                                    //----------- MAİL BAŞLANGICI-----------
+                                    $mail = new PHPMailer();
+                                    $mail->Host = 'mail.aksaraybilimmerkezi.org.tr';
+                                    $mail->Port = 587;
+                                    $mail->SMTPSecure = 'tls';
+                                    $mail->SMTPAuth = true;
+                                    $mail->Username = 'bilgi@aksaraybilimmerkezi.org.tr';
+                                    $mail->Password = 'GH.7X!(yxq;R';
+                                    $mail->IsSMTP();
+
+                                    $mail->From = "bilgi@aksaraybilimmerkezi.org.tr";
+                                    $mail->FromName = $ad;
+                                    $mail->CharSet = "UTF-8";
+                                    $mail->isHTML();
+                                    $mail->Subject = $konu;
+                                    //----------- MAİL BAŞLANGICI-----------
+
+                                    $mail->AddBCC('bilgi@aksaraybilimmerkezi.org.tr');
+                                    $mesaj2 = $telefon . "</br> " . $mesaj;
+                                    $mail->MsgHtml($mesaj2);
+                                    if ($mail->Send()) {
+                                        echo "Mail Gönderildi";
+                                        //unlink($klasor.'/'.$adi);
+                                    } else {
+                                        echo "hata oluştu";
+                                    }
+                                }
+                            } else {
+                            }
+
+
+
+                            ?>

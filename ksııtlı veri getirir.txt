@@ -1,0 +1,1 @@
+substr($is['sergi_aciklama'],0,80);

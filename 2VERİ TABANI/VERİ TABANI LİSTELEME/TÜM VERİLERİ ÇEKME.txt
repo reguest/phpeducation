@@ -1,0 +1,17 @@
+<?php//sýtenýn en ustune gelecek
+$query = $baglanti->db->query("SELECT * FROM incecode", PDO::FETCH_ASSOC);
+if ( $query->rowCount() ){
+     foreach( $query as $row )
+		 {
+?>
+
+BURAYA SÝTENÝN BODY KISMI GELECEK
+
+
+<title> <?php  echo $row["title"] ?></title>
+
+
+//burayýda sýtenýn son bolumune ekleyezegýz
+<?php
+     }
+}

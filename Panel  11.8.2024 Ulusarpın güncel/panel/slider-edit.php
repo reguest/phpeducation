@@ -1,0 +1,132 @@
+<?php
+include "template/header.php"; ?>
+ 
+ <?php
+$id = intval($_GET['id']);
+
+$slides = $config->db->prepare("SELECT * from slides where id=?");
+$slides->execute(array($id));
+$slidesAll = $slides->fetch();
+
+
+?>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Slider Düzenle</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Detay</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section> 
+    </section> 
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-outline card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                        Slider Düzenle
+
+                        </h3>
+                        <!-- tools box -->
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool btn-sm" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <!-- /. tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body pad">
+                        <form method="POST" action="settings/sliders-settings.php" enctype="multipart/form-data" >
+                      <input type="hidden" name="id" value="<?= $slidesAll['id'] ?>">
+                      <input type="hidden" name="oldImage" value="<?= $slidesAll['image'] ?>">
+                      <div class="mb-3">
+                        <img  width="80px" src="../images/slider/<?= $slidesAll['image'] ?>" alt="">
+
+                            </div>
+                     
+                      <div class="mb-3">
+                      <input class="form-control" type="file" name="imageFile">
+                      </div>
+                   
+                      
+                      <div class="mb-3">
+                        <input type="text" class="form-control" value="<?= $slidesAll['title'] ?>" name="title" id="exampleInputEmail1"  placeholder="Sayfa">
+
+                            </div>
+
+                            
+                        <div class="mb-3">
+                            <input type="text" class="form-control" value="<?= $slidesAll['sliderOrder'] ?>" name="sliderOrder" id="exampleInputEmail1"  placeholder="Kategori">
+
+                            </div>
+
+                            <div class="mb-3">
+                        <input type="text" class="form-control" value="<?= $slidesAll['description'] ?>" name="description" id="exampleInputEmail1"  placeholder="Açıklama">
+
+                            </div>
+
+                            <div class="mb-3">
+                        <input type="text" class="form-control" value="<?= $slidesAll['button'] ?>" name="button" id="exampleInputEmail1"  placeholder="Buton Adı">
+
+                            </div>
+
+                            
+                            <div class="mb-3">
+                        <input type="text" class="form-control" value="<?= $slidesAll['url'] ?>" name="url" id="exampleInputEmail1"  placeholder="Bağlantı">
+
+                            </div>
+                          
+
+                            <div class="mb-3">
+                            <label>Seçim</label>
+                        <select name="status" class="form-control">
+                          <option <?php if($slidesAll['status'] == 1) {
+                              echo "selected";
+                          } ?> value="1">Slider</option>
+                          <option <?php if($slidesAll['status'] == 0) {
+                              echo "selected";
+                          } ?> value="0">Banner</option>
+                  
+                        </select>
+                            </div>
+                           
+
+                            </div>
+
+                            <div class="card-footer">
+                                <button style="width: 100%;" type="submit" name="update_sliders_setting" class="btn btn-primary ">Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.col-->
+        </div>
+        <!-- ./row -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+<!-- /.content-wrapper -->
+
+<?php include "template/footer.php"; ?>

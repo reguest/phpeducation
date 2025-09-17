@@ -1,0 +1,103 @@
+
+/* my style  */
+
+.whatsapp {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    transition: all .5s ease-in-out;
+    z-index: 99;
+}
+
+.whatsapp a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background: #4dc247;
+}
+
+.whatsapp .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    line-height: normal;
+    font-size: 15px;
+    top: 13px;
+    left: 105%;
+    height: auto;
+}
+
+.whatsapp:hover a {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.whatsapp:hover .tooltiptext {
+    visibility: visible;
+}
+
+.telefon {
+    position: fixed;
+    left: 15px;
+    bottom: 75px;
+    transition: all .5s ease-in-out;
+    z-index: 99;
+}
+
+.telefon a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background: #0283cc;
+}
+
+.telefon .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    line-height: normal;
+    font-size: 15px;
+    top: 13px;
+    left: 105%;
+    height: auto;
+}
+
+.telefon:hover a {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.telefon:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* WHATSAPP TELEFON YUKARI*/
+
+
+/* SOSYAL MEDYA Ä°KONLARI*/

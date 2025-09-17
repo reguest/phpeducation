@@ -1,0 +1,30 @@
+//---------------SESSION OLUSTURMA-------------
+
+        if ($_POST)
+        {
+        $email=strip_tags($_POST['email']);
+        $password=strip_tags($_POST['password']);
+        if ($email!="" and $password!="")
+        {
+        $sorgu=$baglanti->db->prepare("select * from user where email=? and password=?");
+        $sorgu->execute(array($email,md5($password)));
+        $sonuc=$sorgu->rowCount();
+        if ($sonuc=!0)
+        {
+          sessionmanager::sessionolustur(["email"=>$email,"password"=>md5($password)]);
+          helper::yonlendir(SITE_URL);
+        echo "basarýlý";
+        }
+        else {
+          echo "hata kullanýcý yok";
+        // helper::alert("danger","böyle bir kullanýcý bulunamadý");
+        }
+        }
+        else {
+          echo "tüm alanlarý doldurunuz";
+         //helper::alert("danger","lütfen Tüm alanlarý doldurunuz");
+        }
+
+        }
+
+//---------------SESSION OLUSTURMA-------------

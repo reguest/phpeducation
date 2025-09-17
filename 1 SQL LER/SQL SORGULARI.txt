@@ -1,0 +1,5 @@
+güncelleme
+UPDATE admin_email set k_adi='admin@mail.com'  where id=2
+------------
+
+DELETE from picture where picture_id=2

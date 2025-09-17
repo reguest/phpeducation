@@ -1,0 +1,7 @@
+if(isset($_GET['delete_id']))
+{
+
+
+  <a class="btn btn-danger" href="?delete_id=<?php echo $row2['id']?>" title="Silmek için týkla" onclick="return confirm('Görseli silmek istediðine emin misin?')">Sil</a>
+
+}

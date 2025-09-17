@@ -1,0 +1,1 @@
+//$k_bilgi=$sessionmaneger->kullanicibilgi();//KULLANICI BÝLGÝLERÝNE ULAÞMAK ICIN

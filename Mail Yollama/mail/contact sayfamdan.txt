@@ -1,0 +1,48 @@
+  <?php
+                          if (isset($_POST['gonder'])) {
+
+                                    $ad= strip_tags($_POST['ad']);
+                                    $email = strip_tags($_POST['email']);
+                                    $telefon = strip_tags($_POST['telefon']);
+                                    $mesaj= strip_tags($_POST['mesaj']);
+                                      // gonder var ise
+                                      include 'mail/class.phpmailer.php';
+                                      if ($ad!="" and $email!="" and $telefon!="" and $mesaj!="") {
+                                        //inputlar boş değifelse
+
+                                        //----------- MAİL BAŞLANGICI-----------
+                                        $mail= new PHPMailer();
+                                        $mail->Host = 'mail.incecode.com';
+                                        $mail->Port=587;
+                                        $mail->SMTPSecure= 'tls';
+                                        $mail->SMTPAuth = true;
+                                        $mail->Username='info@incecode.com';
+                                        $mail->Password='na?%()!(?/';
+                                        $mail->IsSMTP();
+
+                                        $mail->From ="info@incecode.com";
+                                        $mail->FromName=$ad;
+                                        $mail->CharSet="UTF-8";
+                                        $bilgi=$email ."</br>". $telefon;
+                                        $mail->Subject=$bilgi;
+                                                                                                                    //----------- MAİL BAŞLANGICI-----------
+
+                                       $mail->AddBCC('orhanince7697@gmail.com');
+
+                                        $mail->MsgHtml($mesaj);
+                                        if ($mail->Send()){
+                                          echo "Mail Gönderildi";
+                                          //unlink($klasor.'/'.$adi);
+                                        }else{
+                                          echo "hata oluştu";
+                                        }
+
+                                  }
+                                }
+                                else {
+
+                                }
+
+
+
+                           ?>

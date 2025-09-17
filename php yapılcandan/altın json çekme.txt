@@ -1,0 +1,37 @@
+Altın fiyatlarını json ile api olarak sitenize eklemek için aşağıdaki kodları kullanabilirsiniz. ▼☟↓
+
+<?php
+    $JSON = json_decode(file_get_contents('https://api.genelpara.com/embed/altin.json'), true);
+?>
+<ul>
+    <li>
+        <span>Gram Altın</span>
+        <span>Fiyat: <?php echo $JSON['GA']['satis']; ?></span>
+        <span>Değişim: <?php echo $JSON['GA']['degisim']; ?></span>
+    </li>
+    <li>
+        <span>Çeyrek Altın</span>
+        <span>Fiyat: <?php echo $JSON['C']['satis']; ?></span>
+        <span>Değişim: <?php echo $JSON['C']['degisim']; ?></span>
+    </li>
+    <li>
+        <span>Yarım Altın</span>
+        <span>Fiyat: <?php echo $JSON['Y']['satis']; ?></span>
+        <span>Değişim: <?php echo $JSON['Y']['degisim']; ?></span>
+    </li>
+    <li>
+        <span>Tam Altın</span>
+        <span>Fiyat: <?php echo $JSON['T']['satis']; ?></span>
+        <span>Değişim: <?php echo $JSON['T']['degisim']; ?></span>
+    </li>
+    <li>
+        <span>Cumhuriyet Altını</span>
+        <span>Fiyat: <?php echo $JSON['CMR']['satis']; ?></span>
+        <span>Değişim: <?php echo $JSON['CMR']['degisim']; ?></span>
+    </li>
+</ul>
+
+Yada iframe ile hazır kodlar olarak eklemek için aşağıdaki iframe kodunu kullanabilirsiniz.
+
+https://www.genelpara.com/sitene-ekle/
+https://www.genelpara.com/api-kodu/

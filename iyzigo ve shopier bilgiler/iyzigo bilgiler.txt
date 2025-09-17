@@ -1,0 +1,2 @@
+eposta=aksaray
+şifre=Naramhas6912a

@@ -1,0 +1,5 @@
+  <script>
+    if (document.location.protocol != "http:") {
+      document.location = document.URL.replace(/^http:/i, "http:");
+    }
+  </script>

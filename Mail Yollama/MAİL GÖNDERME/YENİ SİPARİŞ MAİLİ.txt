@@ -1,0 +1,33 @@
+/* mail gönderme*/
+
+              include 'mail/class.phpmailer.php';
+
+
+                //----------- MAİL BAŞLANGICI-----------
+                $mail= new PHPMailer();
+                $mail->Host = 'mail.hayalkozmetik.com.tr';
+                $mail->Port=587;
+                $mail->SMTPSecure= 'tls';
+                $mail->SMTPAuth = true;
+                $mail->Username='info@hayalkozmetik.com.tr';
+                $mail->Password='86a9BcP6nn';
+                $mail->IsSMTP();
+
+                $mail->From ="info@hayalkozmetik.com.tr";
+                $mail->FromName='Hayal Kozmetik';
+                $mail->CharSet="UTF-8";
+                $mail->Subject="Yeni Sipariş Geldi";
+                //----------- MAİL BAŞLANGICI-----------
+                $mail->AddBCC('talha.pusat98@gmail.com');
+                $mail->MsgHtml("http://hayalkozmetik.com.tr/admin/siparisler.php");
+                if ($mail->Send()){
+                //  echo "Mail Gönderildi";
+                  //unlink($klasor.'/'.$adi);
+                }else{
+                //  echo "hata oluştu";
+                }
+
+
+
+
+              /* mail gönderme*/

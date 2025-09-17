@@ -1,0 +1,11 @@
+.scrollToTopp {
+    display: inline-block;
+    /* display: none; */
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 9999;
+    line-height: 20px;
+}
+
+<a class="scrollToTopp" href="https://wa.me/905415430668?text=Merhaba" target="_blank"><img src="wp-content\uploads/whatsapp.png" height="40" width="auto" alt="WhatsApp ile iletişime geç"></a>

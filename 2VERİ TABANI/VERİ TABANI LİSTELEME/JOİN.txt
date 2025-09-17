@@ -1,0 +1,9 @@
+LEFT JOIN user ON user.id = orders.user_id;
+
+
+
+
+$orders = $config->db->prepare("SELECT * from orders  
+                                    -- INNER JOIN products ON products.id = orders.product_id;
+                                    LEFT JOIN user ON user.id = orders.user_id;
+                                    ORDER BY id DESC");

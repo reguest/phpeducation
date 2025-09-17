@@ -1,0 +1,4 @@
+substr($is['sergi_aciklama'],0,80);
+
+
+       <td> <?= mb_substr($row['project_icerik'], 0, 30) ?></td>

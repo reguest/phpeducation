@@ -1,0 +1,13 @@
+[
+    {
+        "name": "İncecode",
+        "host": "ftp.incecode.com",
+        "port": 21,
+        "type": "ftp",
+        "username": "incecode",
+        "password": "1UTZeaJw[!Sm",
+        "path": "/",
+        "autosave": true,
+        "confirm": true
+    }
+]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>İnstagram postları çekme</title>
+  </head>
+  <body>
+
+
+<?php
+
+$fgc=file_get_contents("https://www.instagram.com/p/CK41Ck4rvAi/");
+$parcala=explode('<img srcset="', $fgc);
+for ($i=1; $i <count($parcala) ; $i++) {
+$parcala2 =explode('"',$parcala[$i]);
+echo '<img srcset="'.$parcala2[0]. '"<br/>)';
+}
+ ?>

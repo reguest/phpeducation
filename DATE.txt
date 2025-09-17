@@ -1,0 +1,5 @@
+$hizmet_tarihi=date("d-m-Y H:i:s");
+
+date_default_timezone_set('Europe/Istanbul');
+------
+date("d F Y l")

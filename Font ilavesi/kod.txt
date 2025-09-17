@@ -1,0 +1,12 @@
+@font-face {
+  font-family: isim;
+  src: url(../../Avocado Creamy.ttf);
+}
+/*
+
+þimdi her hangi bir texte font-family:isim yaznca olacak
+*/
+
+
+/// ornek 2
+html,body,div,p,,ul,li,a{font-family:isim;}

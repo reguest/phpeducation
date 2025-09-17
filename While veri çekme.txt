@@ -1,0 +1,18 @@
+    <?php
+                  $stmt=$baglanti->db->prepare('SELECT * FROM referanslar');
+                    $stmt->execute();
+                    if($stmt->rowCount()>0)
+                    {
+                      while($referans=$stmt->fetch(PDO::FETCH_ASSOC))
+                      {
+                        extract($referans);
+                        ?>
+                        <article class="team-item">
+        									<img class="team-image" src="<?php echo $referans['url']?>" alt="Arena"/>
+        							<!--		<h5 class="team-title">Arena Spor Kulübü</h5>-->
+        								</article>
+                  <?php
+
+                    }
+                  }
+                  ?>

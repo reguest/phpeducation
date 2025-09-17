@@ -1,0 +1,34 @@
+$sessionmanager->sessionControl(); // admin girişini kontrol ettik
+
+class sessionmanager extends baglanti
+{
+    public static function sessionolustur($array = [])
+    {
+        if (count($array) != 0) {
+            foreach ($array as $key => $value) {
+                $_SESSION[$key] = $value;
+            }
+        }
+    }
+    public static function sessionControl()
+    {
+        if (empty($_SESSION['admin_email'])) {
+            //echo "oturum açılmamış";
+            //Session kontrolu yapıldı ve boş döndüğü için login sayfasına yönlendirildi
+            header("location:login.php");
+        } else {
+        }
+    }
+ }
+
+--------------------------------
+
+2. yöntem
+// if (!$sessionmaneger->sessionControl())
+// {
+//     he
+//   //helper::yonlendir("islemler/giris.php"); die();//Böyle bir kullanıcı yoksa session false döndüyse girias yap sayfasına yönlendirir ve aşagısındakı hıc bır kodu calıstırmaz (die)
+// }
+
+
+2. yöntem

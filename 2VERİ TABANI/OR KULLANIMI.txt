@@ -1,0 +1,2 @@
+$sorgu=$baglanti->db->prepare("SELECT * FROM user where k_adi=? or email=? and password=? ");
+                      $sorgu->execute(array($email,$email,md5($password)));

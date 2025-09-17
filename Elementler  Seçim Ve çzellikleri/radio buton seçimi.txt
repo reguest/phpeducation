@@ -1,0 +1,16 @@
+<form action="" method="post">
+    <input type="radio" name="radio" value="Erkek" id="erkek"> <label for="erkek">Erkek</label>
+    <br>
+    <input type="radio" name="radio" value="Kadýn" id="kadin"> <label for="kadin">Kadýn</label>
+    <br>
+    <input type="submit" name="gonder" value="Gönder">
+</form>
+<?php
+
+
+if(isset($_POST["gonder"])) {
+    $gelen = $_POST["radio"];
+
+    echo $gelen;
+}
+ ?>

@@ -1,0 +1,1 @@
+$query = $baglanti->db->query("SELECT * FROM turlar where tur_kategori='$kategori' ", PDO::FETCH_ASSOC)

@@ -1,0 +1,11 @@
+aþþaðýdaki kod girilen yeni fiyatýn 18% kdv sini bulup yeni fiyatýnýz yazar
+
+
+<?php
+
+$fiyat=100;
+$kdv=$fiyat*18/100;
+$yenifiyat=$fiyat-$kdv;
+echo $yenifiyat;
+
+?>

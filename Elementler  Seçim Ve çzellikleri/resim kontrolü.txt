@@ -1,0 +1,4 @@
+if ($_FILES['yukle']['tmp_name']=="") {
+  // DOSYA YOK
+  echo "dosya yok";
+}

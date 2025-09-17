@@ -1,0 +1,21 @@
+  if (isset($_COOKIE['giris']))//giris adýnda bir cookie varmý kontroll ettik
+        {
+          $json=json_decode($_COOKIE['giris'],true);//cookýe mýzý arraye cevýrýr normal sekýlde yazdýramayacagýmýz ýcýn
+           sessionmanager::sessionolustur($json);
+          if ($json=true)
+          {
+          //  helper::yonlendir(SITE_URL);
+            header("Location:index.php");
+        echo "zaten giriþ YAPILIIIIIIIIIIIIIIIIIIIIIIIII";
+          }
+
+        else {
+          echo "Giriþ yapýlmamýþ";
+        }
+        }
+
+======login sayfasýna yazýlýr cookiye oluþturmak ýcýn
+
+          $cookieArray=array("email"=>$email,"password"=>$password);
+          $cookieArray=json_encode($cookieArray);
+          setcookie("giris",$cookieArray,time() + 3600 );

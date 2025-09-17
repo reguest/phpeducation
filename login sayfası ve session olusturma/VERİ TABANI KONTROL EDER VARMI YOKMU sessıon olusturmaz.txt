@@ -1,0 +1,28 @@
+//BURADAKI KODLAR VERI TABANINDA GÝRÝLEN DEGER ÝLE AYNI BIR DEGER VAR ISE ÝSLEM YAPAR AMA SESSION OLUSTURMAZ
+/*
+if($_POST)
+{
+  $email=strip_tags($_POST['email']);
+  $password=strip_tags($_POST['password']);
+  if (empty($_POST["email"]) || empty($_POST["password"]))
+  {
+  echo  "bu alanalar boþ býrakýlmaz";
+  }
+  else {
+    $sorgu=$baglanti->db->prepare("select * from user where email=? and password=?");
+    $sorgu->execute(array($email,md5($password)));
+    $sonuc=$sorgu->rowCount();
+    if ($sonuc!=0)
+{
+  echo "basarýlý";
+  helper::yonlendir(SITE_URL);
+}
+else {
+  echo "kullanýcý yok";
+}
+
+
+  }
+
+}
+*/

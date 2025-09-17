@@ -1,0 +1,12 @@
+Merhaba,
+
+Ücretsiz SSL kurulumunuz tamamlanmıştır.
+
+Sitenizde/scriptinizde sitenizin https:// olarak çalışması için gerekli ayarları yapmanız gerekebilir.
+
+Sitenizde yeşil kilit simgesi görünmesi için, siteniz üzerinde hiçbir öğe http:// olarak çağırılmamalı, bütün öğeler https:// olarak çağırılmalıdır. Bunun için gerekli düzenlemeler siteniz/scriptiniz üzerinde yapılacağından bunu biz sağlayamamaktayız. Dilerseniz bu düzenlemeler için bir webmaster veya yazılımcı ile görüşebilirsiniz.
+
+Kontrol panelinizdeki Let's Encrypt™ SSL bölümüne girerek, istediğiniz site için +Issue butonuna basarak ve açılan sayfada tekrar Issue butonuna basarak bu kurulumu kolayca siz de yapabilirsiniz.
+
+Ücretsiz SSL sertifikaları, 3 aylık olarak oluşturulmaktadır ve otomatik olarak yenilenmektedir. Bazı durumlarda (yazılımınızın SSL kurulumu için gerekli doğrulamaları engelliyor olması gibi) otomatik yenilenemeyebilir. Böyle durumlarda manuel olarak yenileme yapılması gerekmektedir, böyle bir durumda dilerseniz kontrol panelinizden yenilemeyi deneyebilir dilerseniz bizden destek isteyebilirsiniz. Normal şartlarda SSL otomatik olarak yenilenmektedir.
+

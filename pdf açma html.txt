@@ -1,0 +1,5 @@
+<div class="col-md-12 col-sm-4">
+
+					<iframe src="pdf/gizlilik-sozlesmesi.pdf" style="width: 100%;height: 1000px;border: none;"></iframe>
+                    
+                    </div>

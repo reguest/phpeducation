@@ -1,0 +1,6 @@
+Responsive kullaným
+<div id="iyzipay-checkout-form" class="responsive"></div>
+
+
+Pop-up kullaným
+<div id="iyzipay-checkout-form" class="popup"></div>

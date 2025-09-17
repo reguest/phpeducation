@@ -1,0 +1,60 @@
+ <?php
+
+                        $execute = []; // sql execute karşılıkları için boş dizi oluşturduk
+                        
+                        if (isset($_GET['title']) and !empty($_GET['title'])) {
+
+                            $title = $_GET['title'];
+                            $sql = " where title=:title ORDER BY id DESC "; //sql sorgusu için arama yapılacak sütunları birleştirdik
+                            $execute["title"] = $title; //boş diziye önce karşılık isim verdik ve = ile o ismi doldurduk
+                        
+
+
+                        } else if (isset($_GET['city']) and !empty($_GET['city'])) {  // verileri şehre göre filtrele
+                        
+                            $city = $_GET['city'];
+                            $sql = " where button=:button ORDER BY id DESC "; //sql sorgusu için arama yapılacak sütunları birleştirdik
+                            $execute["button"] = $city; //boş diziye önce karşılık isim verdik ve = ile o ismi doldurduk
+                        
+
+                        } else {  // filtreleme yapılmamış ise tüm verileri getir
+                        
+                            $sql = " ORDER BY id DESC "; //sql sorgusu oluşturduk
+                            $execute = [];
+
+                        }
+
+
+
+                        $sliders = $config->db->prepare("SELECT * from dealers " . $sql);
+                        $sliders->execute($execute);
+                        $slidersAll = $sliders->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($slidersAll as $row) {
+
+                            ?>
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="dl_card_box bg-white pt-3 px-3 pb-4 rounded">
+                                    <div class="figure_img position-relative">
+                                        <a href="dealer-single.html"><img src="images/dealer/<?= $row['image'] ?>"
+                                                alt="not found" class="img-fluid"></a>
+                                        <!-- <span
+                                            class="listing-count bg-white text-primary fw-500 rounded-1 shadow py-1 px-3 position-absolute start-0 bottom-0">08
+                                            Listing</span> -->
+                                    </div>
+                                    <a href="dealer-single.html">
+                                        <h5 class="mt-4"><?= $row['title'] ?></h5>
+                                    </a>
+                                    <span class="slide_meta_text d-block"><i
+                                            class="fa-solid fa-location-dot"></i><?= $row['sliderOrder'] ?></span>
+                                    <span class="slide_meta_text d-block phone mt-2"><i class="fa-brands fa-whatsapp"></i>
+                                        <?= $row['description'] ?></span>
+
+                                </div>
+                            </div>
+                            <?php
+
+                        }
+
+                        ?>

@@ -1,0 +1,20 @@
+<?php
+$veri=$baglanti->db->prepare("select * from ziyaretci");
+$veri-> execute(array("1"));
+$islem=$veri->fetch();
+
+$sorgu=$baglanti->db->prepare("SELECT * FROM ziyaretciler WHERE DATE(tarih) = CURDATE()");
+$sorgu->execute();
+$sorgu->rowCount();
+
+ ?>
+              <th>Bugünkü Ziyaretçi</th>
+              <th>Toplam Ziyaretçi</th>
+              <th>Toplam Üye Sayısı</th>
+                <th>Toplam Ürün Sayısı</th>
+           </tr>
+           <tr>
+             <td> <?=$sorgu->rowCount()?></td>
+             <td> <?=$sessionmanager->sayial("ziyaretciler");?> </td>
+             <td> <?=$sessionmanager->sayial("user");?> </td>
+              <td> <?=$sessionmanager->sayial("urunler");?> Adet</td>

@@ -1,0 +1,29 @@
+     <?php
+
+     //formu güncelleme ile veri tabanýna ekler
+     if(isset($_POST['kaydet']))
+              {
+                 $title=$_POST['title'];//Site bilgilerini inputlardan alacaðýmýzý belirttik                                                     //Site bilgilerini inputlardan alacaðýmýzý belirttik
+                 $aciklama=$_POST['aciklama'];
+                 $adi=$_POST['adi'];
+                
+
+                $sorgu=$baglanti->db->prepare("UPDATE site_ayar set title=? ,aciklama=? where id=1 ");//Güncelleme komutlarýmýzý yazdýk
+                $guncelle=$sorgu->execute(array($title, ));//Güncelleme komutlarýmýzý yazdýk
+                if ($guncelle)
+                 {
+                  ?>
+<div class="alert alert-info" role="alert"><strong>Baþarýlý!</strong> Tüm deðiþiklikler uygulandý.</div>
+                  <?php
+                  //helper::alert("success","Tebrikler ! Kullanýcý güncellendi");
+                 }
+                 else {
+                   //echo "Günceleme HATASI";
+                   ?>
+<div class="alert alert-danger mb-0" role="alert"><strong>Hay Aksi!</strong> Kaydetme sýrasýnda istenmeyen bir sorun yaþandý.</div>
+                   <?php
+                 }
+
+
+             }
+       ?>

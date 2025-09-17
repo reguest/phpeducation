@@ -1,0 +1,29 @@
+[20-Oct-2023 11:21:34 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/index.php on line 28
+[20-Oct-2023 11:21:35 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/index.php on line 28
+[20-Oct-2023 11:28:24 Europe/Istanbul] PHP Warning:  PDOStatement::fetchAll() expects parameter 1 to be integer, object given in /home/incecode/public_html/test2/pdo/index.php on line 30
+[20-Oct-2023 11:29:51 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/ililce.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/ililce.php on line 8
+[20-Oct-2023 11:29:55 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/ililce.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/ililce.php on line 8
+[20-Oct-2023 11:29:56 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/ililce.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/ililce.php on line 8
+[20-Oct-2023 13:22:16 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/ililce.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/ililce.php on line 8
+[20-Oct-2023 13:23:30 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/incecode/public_html/test2/pdo/ililce.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/incecode/public_html/test2/pdo/ililce.php on line 24

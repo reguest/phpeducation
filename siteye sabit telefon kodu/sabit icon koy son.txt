@@ -1,0 +1,12 @@
+<style>
+.scrollToTop2 {
+    display: inline-block;
+    position: fixed;
+    right: 2.5%;
+    bottom: 3%;
+    z-index: 9999;
+    width: auto;
+    height: auto;
+</style>
+
+ <img class="scrollToTop2" src="images/icon.png" alt="">

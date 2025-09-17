@@ -1,0 +1,8 @@
+
+$tarih1 = strtotime($_SESSION['startDate']);
+$tarih2 = strtotime($_SESSION['finishDate']);
+$gunfarki = ($tarih2 - $tarih1) / 86400;
+$rentDayCount = round($gunfarki);
+
+echo $toplam = $productAll['price'] * $rentDayCount;
+$_SESSION['toplam'] = $toplam;

@@ -1,0 +1,22 @@
+<style>
+
+.scrollToTop {
+  display: inline-block;
+  /*  display: none;*/
+    position: fixed;
+    right: 2.5%;
+    bottom: 3%;
+    z-index: 9999;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 3px solid #d3dbe2;
+    background: #ff5e3a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+</style>
+
+<button class="scrollToTop"><i class="fa fa-angle-up"></i> <span>Yukarý</span></button>

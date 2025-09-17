@@ -1,0 +1,11 @@
+	
+session_start();
+echo isset($_SESSION['deneme']);
+
+
+
+
+
+-------------------
+session_start();
+session_destroy();
